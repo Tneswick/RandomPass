@@ -36,8 +36,6 @@ var generatePassword = function() {
     alert("Your response must be a number, please try again.");
     generatePassword();
   };
-  // convert string to number
-  passLength = parseInt(passLength);
   
   // check for uppercase
   var passTypeUpper = confirm("Do you want to include UPPERCASE letters?");
@@ -45,37 +43,41 @@ var generatePassword = function() {
   if (passTypeUpper) {
     charset += chars1
   };
-  console.log(charset);
+  
+
   // check for lowercase
   var passTypeLower = confirm("Do you want to include lowercase letters?");
   // add lowercase to charset if wanted
   if (passTypeLower) {
     charset += chars2
   };
-  console.log(charset);
+  
+
   // check for numbers
   var passTypeNum = confirm("Do you want to include numbers?");
   // add numbers to charset if wanted
   if (passTypeNum) {
     charset += chars3
   };
-  console.log(charset);
+  
+
   // check for specials
   var passTypeSpec = confirm("Do you want to include special characters?");
   // add specials to charset if wanted
   if(passTypeSpec) {
     charset += chars4
   };
-  console.log(charset);
+  
+
   if (!passTypeUpper && !passTypeLower && !passTypeNum && !passTypeSpec){
     alert("You must select at least one set of characters.");
     generatePassword();
-  }
+  };
 
   // iterator to run through charset and select the password
   for (var i = 0; i < passLength; i++) {
     password += charset[Math.floor(Math.random() * charset.length)]
   };
-  console.log(password);
+
   return password;
-};
+}
