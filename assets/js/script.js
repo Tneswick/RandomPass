@@ -29,7 +29,7 @@ var generatePassword = function() {
   // check password length parameter
   passLength = prompt("Select a password length: Mininum 8, Maximum 128.")
 
-  if (passLength >= 8 || passLength <= 128) {
+  if (passLength >= 8 && passLength <= 128) {
   console.log(passLength);
   } else {
     alert("Please be sure your response is a number between 8 and 128.")
