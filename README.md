@@ -16,6 +16,9 @@ Answer a set of prompts to determine: *Length, uppercase inclusion, lowercase in
 
 [RandomPass](https://tneswick.github.io/RandomPass/)
 
+## 📷 Screenshot of the Webpage
+![Screenshot of the RandomPass Webpage](./assets/03-javascript-homework-demo.png)
+
 ## ⚙Contribution
 
 *Made by* **TNeswick**
